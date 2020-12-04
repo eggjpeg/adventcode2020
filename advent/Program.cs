@@ -13,7 +13,7 @@ namespace advent
         {
             var list = day4.getStrings("files/passports.txt");
            int p =  day4.getPassports(list);
-            Console.WriteLine(p + 1);
+            Console.WriteLine(p);
             Console.ReadLine();
         }
        

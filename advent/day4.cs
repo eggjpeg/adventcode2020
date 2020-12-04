@@ -38,7 +38,7 @@ namespace advent
                 if(moreInfo[0].Equals("byr"))
                 {
                      int.TryParse(moreInfo[1], out int r);
-                    if (r < 1920 && r > 2020)
+                    if (r < 1920 && r > 2002)
                         return false;
                 }
                 else if(moreInfo[0].Equals("iyr"))
@@ -63,7 +63,7 @@ namespace advent
                         return false;
                     }
 
-                    for (int i = 0; i < moreInfo[1].Length; i++)
+                    for (int i = 0; i < moreInfo[1].Length - 1; i++)
                     {
                         if(int.TryParse(moreInfo[1][i].ToString(), out int r))
                         {
@@ -77,7 +77,7 @@ namespace advent
                                     return false;
                             }
                         }
-                        if (moreInfo[1][i] == 'i' && moreInfo[1][i+1] == 'n')
+                        else if (moreInfo[1][i] == 'i' && moreInfo[1][i+1] == 'n')
                         {
                             if (int.TryParse(sb.ToString(), out int h))
                             {
@@ -85,6 +85,8 @@ namespace advent
                                     return false;
                             }
                         }
+                        else if (char.IsLetter(moreInfo[1][i]))
+                            return false;
                     }
                 }
                 else if (moreInfo[0].Equals("hcl"))
@@ -96,7 +98,7 @@ namespace advent
                             continue;
                         else
                         {
-                            isHex = ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'f') || (c >= 'A' && c <= 'F'));
+                            isHex = ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'f'));
 
                             if (!isHex)
                                 return false;
