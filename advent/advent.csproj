@@ -44,9 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="day1.cs" />
+    <Compile Include="day10.cs" />
+    <Compile Include="day11.cs" />
+    <Compile Include="day12.cs" />
     <Compile Include="day2.cs" />
     <Compile Include="day3.cs" />
     <Compile Include="day4.cs" />
+    <Compile Include="day5.cs" />
+    <Compile Include="day6.cs" />
+    <Compile Include="day7.cs" />
+    <Compile Include="day8.cs" />
+    <Compile Include="day9.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -54,6 +62,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="files\adapters.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\bags.txt" />
+    <Content Include="files\boarding.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\day12input.txt" />
+    <Content Include="files\infiniteloop.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="files\numbersDay1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -61,6 +80,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="files\passwords.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\planeseats.txt" />
+    <Content Include="files\preamblenums.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\questions.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="files\trees.txt">

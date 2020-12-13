@@ -38,19 +38,19 @@ namespace advent
                 if(moreInfo[0].Equals("byr"))
                 {
                      int.TryParse(moreInfo[1], out int r);
-                    if (r < 1920 && r > 2002)
+                    if (r < 1920 || r > 2002)
                         return false;
                 }
                 else if(moreInfo[0].Equals("iyr"))
                 {
                     int.TryParse(moreInfo[1], out int r);
-                    if (r < 2010 && r > 2020)
+                    if (r < 2010 || r > 2020)
                         return false;
                 }
                 else if (moreInfo[0].Equals("eyr"))
                 {
                     int.TryParse(moreInfo[1], out int r);
-                    if (r < 2020 && r > 2030)
+                    if (r < 2020 || r > 2030)
                         return false;
                 }
                 else if (moreInfo[0].Equals("hgt"))
@@ -92,6 +92,8 @@ namespace advent
                 else if (moreInfo[0].Equals("hcl"))
                 {
                     bool isHex;
+                    if (moreInfo[1][0] != '#')
+                        return false;
                     foreach (var c in moreInfo[1])
                     {
                         if (moreInfo[1][0] == '#' && c == '#')

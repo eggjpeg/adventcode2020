@@ -11,9 +11,9 @@ namespace advent
     {
         static void Main(string[] args)
         {
-            var list = day4.getStrings("files/passports.txt");
-           int p =  day4.getPassports(list);
-            Console.WriteLine(p);
+            var list = day10.getNumbers("files/adapters.txt");
+            int r = day10.getNum(list);
+            Console.WriteLine(r);
             Console.ReadLine();
         }
        
