@@ -11,8 +11,8 @@ namespace advent
     {
         static void Main(string[] args)
         {
-            var list = day10.getNumbers("files/adapters.txt");
-            int r = day10.getNum(list);
+            var list = day12.getStrings("files/day12input.txt");
+            int r = day12.getPos(list);
             Console.WriteLine(r);
             Console.ReadLine();
         }

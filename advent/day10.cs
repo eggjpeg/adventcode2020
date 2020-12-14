@@ -20,21 +20,21 @@ namespace advent
             }
             return list;
         }
-        public static int findArrangements(List<int> list)
-        {
-            int[] originalAr = new int[list.Count];
-            for (int i = 0; i < list.Count; i++)
-            {
-                originalAr[i] = list[i];
-            }
-            List<int> original = originalAr.ToList();
-            for (int i = 0; i < list.Count; i++)
-            {
-                original = originalAr.ToList();
-                list = original;
-                list.Remove()
-            }
-        }
+        //public static int findArrangements(List<int> list)
+        //{
+        //    int[] originalAr = new int[list.Count];
+        //    for (int i = 0; i < list.Count; i++)
+        //    {
+        //        originalAr[i] = list[i];
+        //    }
+        //    List<int> original = originalAr.ToList();
+        //    for (int i = 0; i < list.Count; i++)
+        //    {q
+        //        original = originalAr.ToList();
+        //        list = original;
+        //        list.Remove()
+        //    }
+        //}
         public static int getNum(List<int> list)
         {
             int one = 0;

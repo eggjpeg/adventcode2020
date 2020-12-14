@@ -69,7 +69,9 @@
     <Content Include="files\boarding.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\day12input.txt" />
+    <Content Include="files\day12input.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="files\infiniteloop.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
